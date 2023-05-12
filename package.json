@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "type": "module",
+  "types": "index.d.ts",
   "keywords": [],
   "author": "",
   "license": "ISC",
