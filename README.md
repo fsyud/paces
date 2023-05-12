@@ -1,4 +1,4 @@
-<p align="center"><img height="180" src="https://github.com/ligdy7/axios-min/assets/26371465/a438f5f4-283a-4343-b782-53ce37d3dc12"></p>
+<p align="center"><img height="180" src="https://github.com/ligdy7/paces/assets/26371465/a438f5f4-283a-4343-b782-53ce37d3dc12"></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/swr-min"><img src="https://img.shields.io/badge/LICENSE-MIT-blue"></a>
@@ -11,37 +11,37 @@
 Using npm:
 
 ```bash
-$ npm install axios-min
+$ npm install paces
 ```
 
 Using bower:
 
 ```bash
-$ bower install axios-min
+$ bower install paces
 ```
 
 Using yarn:
 
 ```bash
-$ yarn add axios-min
+$ yarn add paces
 ```
 
 Using pnpm:
 
 ```bash
-$ pnpm add axios-min
+$ pnpm add paces
 ```
 
 Once the package is installed, you can import the library using `import` or `require` approach:
 
 ```js
-import axiosmin from "axios-min";
+import axiosmin from "paces";
 ```
 
 You can also use the default export, since the named export is just a re-export from the axiosmin factory:
 
 ```js
-import axiosmin from "axios-min";
+import axiosmin from "paces";
 
 console.log(axiosmin.isCancel("something"));
 ```
@@ -49,7 +49,7 @@ console.log(axiosmin.isCancel("something"));
 If you use `require` for importing, **only default export is available**:
 
 ```js
-const axiosmin = require("axios-min");
+const axiosmin = require("paces");
 
 console.log(axiosmin.isCancel("something"));
 ```

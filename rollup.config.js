@@ -8,11 +8,11 @@ import { babel } from "@rollup/plugin-babel";
 import autoExternal from "rollup-plugin-auto-external"; // 自动将所有的依赖包排除在打包之外
 
 const lib = require("./package.json");
-const outputFileName = "axios-min";
-const name = "axios-min";
+const outputFileName = "paces";
+const name = "paces";
 const namedInput = "./index.js";
 
-const defaultInput = "./lib/axios-min.js";
+const defaultInput = "./lib/paces.js";
 
 const buildConfig = ({
   es5,
