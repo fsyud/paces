@@ -11,37 +11,37 @@
 Using npm:
 
 ```bash
-$ npm install axiosmin
+$ npm install axios-min
 ```
 
 Using bower:
 
 ```bash
-$ bower install axiosmin
+$ bower install axios-min
 ```
 
 Using yarn:
 
 ```bash
-$ yarn add axiosmin
+$ yarn add axios-min
 ```
 
 Using pnpm:
 
 ```bash
-$ pnpm add axiosmin
+$ pnpm add axios-min
 ```
 
 Once the package is installed, you can import the library using `import` or `require` approach:
 
 ```js
-import axiosmin from "axiosmin";
+import axiosmin from "axios-min";
 ```
 
 You can also use the default export, since the named export is just a re-export from the axiosmin factory:
 
 ```js
-import axiosmin from "axiosmin";
+import axiosmin from "axios-min";
 
 console.log(axiosmin.isCancel("something"));
 ```
@@ -49,7 +49,7 @@ console.log(axiosmin.isCancel("something"));
 If you use `require` for importing, **only default export is available**:
 
 ```js
-const axiosmin = require("axiosmin");
+const axiosmin = require("axios-min");
 
 console.log(axiosmin.isCancel("something"));
 ```
