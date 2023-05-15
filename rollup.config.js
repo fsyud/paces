@@ -7,19 +7,16 @@ import { babel } from "@rollup/plugin-babel";
 
 import autoExternal from "rollup-plugin-auto-external"; // 自动将所有的依赖包排除在打包之外
 
-const lib = require("./package.json");
 const outputFileName = "paces";
 const name = "paces";
-const namedInput = "./index.js";
+const namedInput = "src/index.ts";
+const currentVersion = "v1.0.0";
+const authName = "yud";
+const defaultInput = "lib/paces.ts";
 
-const defaultInput = "./lib/paces.js";
+const extensions = [".ts"];
 
-const buildConfig = ({
-  es5,
-  browser = true,
-  minifiedVersion = true,
-  ...config
-}) => {
+const buildConfig = ({ es5, browser = true, ...config }) => {
   return [
     {
       input: namedInput,
@@ -47,7 +44,7 @@ const buildConfig = ({
 
 export default async () => {
   const year = new Date().getFullYear();
-  const banner = `// Axios Min v${lib.version} Copyright (c) ${year} ${lib.author} and contributors`;
+  const banner = `// Axios Min v${currentVersion} Copyright (c) ${year} ${authName} and contributors`;
 
   return [
     // browser ESM bundle for CDN
@@ -77,7 +74,6 @@ export default async () => {
     ...buildConfig({
       input: defaultInput,
       es5: false,
-      minifiedVersion: false,
       output: {
         file: `dist/browser/${name}.cjs`,
         name,
@@ -96,7 +92,12 @@ export default async () => {
         exports: "default",
         banner,
       },
-      plugins: [autoExternal(), resolve(), commonjs()],
+      plugins: [
+        rollupTypescript({ tsconfig: "./tsconfig.json" }),
+        autoExternal(),
+        resolve({ extensions }),
+        commonjs(),
+      ],
     },
   ];
 };
