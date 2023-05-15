@@ -1,4 +1,4 @@
-<p align="center"><img height="180" src="https://github.com/ligdy7/paces/assets/26371465/a438f5f4-283a-4343-b782-53ce37d3dc12"></p>
+<p align="center"><img height="300" src="https://github.com/ligdy7/paces/assets/26371465/8e262420-ca3d-4625-b422-c6751bcd7ed7"></p>
 
 <p align="center">
   <a href="https://www.npmjs.com/package/swr-min"><img src="https://img.shields.io/badge/LICENSE-MIT-blue"></a>
